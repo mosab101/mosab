@@ -1,3 +1,18 @@
+// باقي التحريكات
+  function addClass(selector, elementName) {
+    const elements = document.querySelectorAll(selector);
+    if (!elements.length) {
+      console.warn(`${elementName} is not defined`);
+      return;
+    
+    }
+    elements.forEach(el => el.classList.add("move-load"));
+  }
+  
+  addClass(".waet", "image");
+  addClass(".Sidebar", "stars");
+  addClass(".name", "name");
+
 // ============================================
 // متغيرات التحكم الرئيسية
 // ============================================
@@ -406,18 +421,6 @@ if (window.scrollY >= px){
 inscroll('.Footer',1850)
 inscroll(".contact-form",1890)
 inscroll(".social-media",1890)
-// باقي التحريكات
-  function addClass(selector, elementName) {
-    const elements = document.querySelectorAll(selector);
-    if (!elements.length) {
-      console.warn(`${elementName} is not defined`);
-      return;
-    
-    }
-    elements.forEach(el => el.classList.add("move-load"));
-  }
-  
-  addClass(".waet", "image");
-  addClass(".Sidebar", "stars");
-  addClass(".name", "name");
+
+
 
